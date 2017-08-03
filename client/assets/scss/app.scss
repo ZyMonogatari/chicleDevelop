@@ -1,0 +1,134 @@
+@import "settings";
+@import "foundation";
+
+body{
+	background:#f0ce2b; 
+}
+.centrar{
+	position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1024px;
+}
+	.contenedor{
+		width: 100%;
+		text-align: center;
+		padding: 0;
+		font-family: 'Open Sans Condensed', sans-serif;
+		color: #d50c47;
+		margin: 30px 0;
+		height: 100%;
+		position: relative;
+	}
+		.formulario{
+			position: absolute;
+		}
+			.formulario .chicle{
+				top:20%;
+			}
+				.formulario .chicle img {
+				    width: 50%;
+				}
+			.formulario .form{
+				display: none;
+			}
+		.logo{
+			margin: 0 auto;
+			width: 55%;
+			max-width: 976px;
+		}
+			.logo img{
+				width: 100%;
+			}
+		.zapato{
+			margin: 20px auto;
+			width: 40%;
+		}
+			.zapato img{
+				width: 100%;
+			}
+		/* estilos progress*/
+		.barra-carga{
+			text-align: center;
+		    width: 40%;
+    		margin: 0 auto;
+    		background: #fff;
+    		border-radius: 30px;
+    		height: 25px;
+    		border: solid 3px #fff;	
+		}
+			.barra {
+				width: 50%;
+				background-color: #bf2549;
+				height: 100%;
+				border-top-left-radius: 30px;
+				border-bottom-left-radius: 30px;
+				border-top-right-radius: 30px;
+				border-bottom-right-radius: 30px;
+				border-color: #bf2549;
+				animation-name: progressBar;
+				animation-iteration-count: infinite;
+				animation-duration: 10s;
+			}
+			@keyframes progressBar {
+			  0% {
+			    width: 10%;
+			  }
+			  
+			  100% {
+			    width: 100%;
+			  }
+			}
+		/*---------------------*/
+		.redes{
+			font-family: 'Open Sans Condensed', sans-serif;
+			color:#d50c47;
+		}
+			.redes h2{
+				font-family: 'Open Sans Condensed', sans-serif;
+			    font-size: 30px;
+			    font-weight: 800;
+			    color: #9f2246;
+			    text-align: center;
+			    margin: 25px 13%;
+			}
+			.redes p{
+				font-family: 'Open Sans Condensed', sans-serif;
+			    font-size: 25px;
+			    color: #d50c47;
+			    margin: 0;
+			}
+				.riesgo{
+					border: 1px solid #bf2549;
+				    font-weight: bold;
+				    font-size: 30px;
+				    width: 40%;
+				    text-align: center;
+				    margin: 0 auto;
+				    padding: 5px;
+				}
+			.redes img{
+				width: 30px;
+				margin: 10px 5px;
+			}
+	@media only screen and (max-width: 1024px) {
+	    .centrar {
+		    position: absolute;
+		    left: 0;
+		    right: 0;
+		    margin: 0 auto;
+		    width: 100%;
+		}
+	}
+	
+	@media only screen and (min-width: 3000px) {
+	    .centrar {
+		    position: absolute;
+		    left: 0;
+		    right: 0;
+		    margin: 0 auto;
+		    width: 50%;
+		    max-width: 1024px;
+		}
+	}
