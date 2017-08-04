@@ -1,6 +1,6 @@
 @import "settings";
 @import "foundation";
-
+@import "font-awesome";
 body{
 	background:#f0ce2b; 
 }
@@ -31,7 +31,43 @@ body{
 				    width: 50%;
 				}
 			.formulario .form{
-				display: none;
+				width: 150%;
+				background: rgba(255, 255, 255, .4);
+			}
+			.formulario .form .form-title-div{
+				width: 100%; 
+				background: #9F2246;
+			}
+			.formulario .form .form-title-div h3{
+				color: white;
+			}
+			.formulario .form .form-title-div .close-form{
+				color: white;
+				position: absolute;
+				top: -5px;
+				right: -85px;
+			}
+			.formulario .form .text-input{
+				width: 90%; 
+				margin: 10px;
+			}
+			.formulario .form .text-area{
+				resize: none; 
+				width: 90%; 
+				margin: 10px; 
+				height: 100px;
+			}
+			.formulario .form .submit-button{
+				position: relative;
+				border-radius: 5px; 
+				background: #C02549;
+				border: none;
+				width: 40%;
+				margin-bottom: 10px;
+				right: -50px;
+				color: white;
+				font-size: 22px;
+				padding: 0;
 			}
 		.logo{
 			margin: 0 auto;

@@ -1,21 +1,25 @@
 ---
 name: Construcción
 url: /
+controller: homeCtrl
 ---
 <div class="centrar">
 	<div class="contenedor">
 		<div class="formulario">
 			<div class="chicle">
-				<img src="/assets/images/chicle-contacto.png" alt="">
+				<img src="/assets/images/chicle-contacto.png" alt="" ng-show="!form" ng-click="form = true;">
 			</div>
-			<div class="form">
-				<ul>
-					<li><h4>CONTACTO</h4></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
+			<div class="form" ng-show="form">
+				<div class="form-title-div">
+					<i class="fa fa-times-circle fa-2x close-form" aria-hidden="true" ng-click="form=false;"></i>
+					<h3>
+						CONTACTO
+					</h3>
+				</div>
+				<input type="text" placeholder="Nombre" class="text-input">
+				<input type="text" placeholder="E-Mail" class="text-input">
+				<textarea placeholder="Mensaje" class="text-area"></textarea>
+				<input type="submit" class="submit-button">
 			</div>
 		</div>
 		<div class="logo">
