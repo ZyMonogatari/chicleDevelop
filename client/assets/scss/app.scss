@@ -20,9 +20,11 @@ body{
 		margin: 30px 0;
 		height: 100%;
 		position: relative;
-	}
+	}	
+		/* estilos formulario y chicle*/
 		.formulario{
 			position: absolute;
+			top: 20%;
 		}
 			.formulario .chicle{
 				top:20%;
@@ -32,11 +34,11 @@ body{
 				}
 			.formulario .form{
 				width: 150%;
-				background: rgba(255, 255, 255, .4);
+				background: rgba(255, 255, 255, .7);
 			}
 			.formulario .form .form-title-div{
 				width: 100%; 
-				background: #9F2246;
+				background: #b72946;
 			}
 			.formulario .form .form-title-div h3{
 				color: white;
@@ -69,6 +71,7 @@ body{
 				font-size: 22px;
 				padding: 0;
 			}
+		/* estilos formulario y chicle*/
 		.logo{
 			margin: 0 auto;
 			width: 55%;
