@@ -16,10 +16,12 @@ controller: homeCtrl
 						CONTACTO
 					</h3>
 				</div>
-				<input type="text" placeholder="Nombre" class="text-input">
-				<input type="text" placeholder="E-Mail" class="text-input">
-				<textarea placeholder="Mensaje" class="text-area"></textarea>
-				<input type="submit" class="submit-button">
+				<form  ng-submit="sendRegsit()">
+					<input type="text" placeholder="Nombre" class="text-input" ng-model="regist.name" required="">
+					<input type="email" placeholder="E-Mail" class="text-input" ng-model="regist.email" required="">
+					<textarea placeholder="Mensaje" class="text-area" ng-model="regist.comment" required=""></textarea>
+					<input type="submit" class="submit-button">
+				</form>
 			</div>
 		</div>
 		<div class="logo">
