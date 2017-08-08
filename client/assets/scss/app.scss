@@ -8,6 +8,11 @@ body{
 	overflow-x: hidden;
 
 }
+.pink-font{
+	color: #c1304c;
+	margin: 5px;
+	margin-bottom: 8px;
+}
 .centrar{
 	position: absolute;
     left: 0;
@@ -27,7 +32,7 @@ body{
 	}	
 		/* estilos formulario y chicle*/
 		.formulario{
-			position: absolute;
+			position: fixed;
 			top: 20%;
 		}
 			.formulario .chicle{
